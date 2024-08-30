@@ -1,0 +1,583 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #000;
+}
+
+.main {
+    background-image: url('https://dkr0pu7ej5xex.cloudfront.net/wp-content/uploads/2017/04/24135159/Netflix-Background.jpg');
+    height: 50rem;
+    background-size: max(1440px, 100vw);
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.main .box {
+    height: 50rem;
+    opacity: 0.69;
+    background-color: #000;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 75vw;
+    height: 62px;
+    margin: auto;
+    padding-top: 15px;
+    position: relative;
+    z-index: 10;
+}
+
+.nav span img {
+    width: 150px;
+}
+
+.nav div {
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    margin-left: 20px;
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-red-sm {
+    background-color: #e50914;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    /* Align content at the bottom */
+    align-items: center;
+    /* Center content horizontally */
+}
+
+.hero {
+    font-family: "Martel Sans", sans-serif;
+    display: flex;
+    width: 60%;
+    height: calc(100% - 77px);
+    color: #fff;
+    flex-direction: column;
+    justify-content: center;
+    /* Ensure content is at the bottom within .hero */
+    align-items: center;
+    /* Center content horizontally */
+    text-align: center;
+    /* Center the text content */
+    padding-bottom: 20px;
+    /* Add padding if needed */
+}
+
+
+.first {
+    padding-top: 3rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.first-card-text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.first-card-images {
+    display: flex;
+    justify-content: space-between;
+}
+
+.separation {
+    height: 5px;
+    /* Thickness of the line */
+    background-color: #544141;
+    /* Color of the line (matching Netflix's primary color) */
+    width: 100%;
+    /* Full width */
+
+    /* Vertical spacing */
+}
+
+.separation not .footer-class {
+    margin-bottom: 1rem;
+}
+
+.second,
+.third,
+.forth {
+    display: flex;
+    flex-direction: row;
+
+}
+/* this is for fax part */
+/* FAQ Section */
+.faq {
+    background-color: #141414; /* Use this color for background */
+    color: white; /* Text color */
+    padding: 20px; /* Padding around the FAQ section */
+    font-family: Arial, sans-serif; /* Font style */
+    max-width: 800px; /* Max width of the FAQ section */
+    margin: auto; /* Center the FAQ section */
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    border-radius: 2rem;
+}
+
+.faq h2 {
+    font-size: 2rem; /* Font size for the FAQ title */
+    margin-bottom: 20px; /* Space below the title */
+    text-align: center; /* Center the title text */
+}
+
+.faq-box {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+.faq-box-question-answer-card {
+    border-bottom: 1px solid #100101; /* Border between FAQ items */
+    padding: 15px 0; /* Padding for each FAQ item */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.faq-box-question-card {
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Space out the content */
+    align-items: center; /* Align items in the center */
+}
+
+.faq-box-question-card li {
+    display: flex; /* Flexbox for list items */
+    align-items: center; /* Align items in the center */
+    justify-content: space-between; /* Space out content */
+    width: 100%; /* Full width of the container */
+    font-size: 1.2rem; /* Font size for the question */
+}
+
+.faq-box-question-card span {
+    flex-grow: 1; /* Allow span to grow and fill available space */
+}
+
+.faq-box-answer-card {
+    display: none; /* Hide the answer by default */
+    padding: 15px 0 0 25px; /* Padding for the answer */
+    font-size: 1rem; /* Font size for the answer */
+    line-height: 1.6; /* Line height for readability */
+}
+
+.icon {
+    width: 24px; /* Icon width */
+    height: 24px; /* Icon height */
+    transition: transform 0.3s ease; /* Smooth transition for rotation */
+}
+
+.icon.rotate {
+    transform: rotate(45deg); /* Rotate icon when active */
+}
+
+/* Hero End Section */
+.hero-end {
+    margin-top: 30px; /* Space above the hero end section */
+    text-align: center; /* Center text */
+}
+
+.hero-end span {
+    display: block; /* Display as block for spacing */
+    margin-bottom: 10px; /* Space below the span */
+    font-size: 1.2rem; /* Font size for the span */
+}
+
+.hero-buttons {
+    display: flex; /* Flexbox for button layout */
+    justify-content: center; /* Center the buttons */
+}
+
+.text-hero-end {
+    padding: 10px; /* Padding for the text button */
+    font-size: 1rem; /* Font size for the text button */
+    border-radius: 3px; /* Rounded corners */
+    border: 1px solid #ccc; /* Border color */
+    margin-right: 10px; /* Space between text buttons */
+}
+
+.red-btn {
+    background-color: #e50914; /* Red background color */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Padding for the button */
+    font-size: 1rem; /* Font size for the button */
+    border: none; /* No border */
+    border-radius: 3px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.red-btn:hover {
+    background-color: #f40612; /* Darker red on hover */
+}
+
+
+
+/* this is for footer part */
+
+.footer-class {
+    background-color: #141414;
+    color: #737373;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-class .footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.footer-class .footer-item {
+    margin: 10px;
+    text-align: left;
+    min-width: 200px;
+}
+
+.footer-class .footer-item a {
+    color: #737373;
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-class .footer-item a:hover {
+    text-decoration: underline;
+}
+
+.footer-class .footer-span {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.footer-class .footer-span a {
+    color: #737373;
+    text-decoration: none;
+}
+
+.footer-class .footer-span a:hover {
+    text-decoration: underline;
+}
+
+.footer-class .final {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-class .btn.last-btn {
+    background-color: #141414;
+    border: 1px solid #737373;
+    color: #737373;
+    padding: 5px;
+    margin: 0 10px;
+}
+
+.footer-class .btn.last-btn option {
+    background-color: #141414;
+    color: #737373;
+}
+
+.footer-class span {
+    display: block;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #737373;
+    font-weight: lighter;
+}
+
+.text-card-tv-smart {
+    font-family: Roboto;
+    font-size: 1rem;
+}
+
+.text-card {
+    font-family: Roboto;
+    font-size: 2rem;
+}
+
+.typewriter {
+    font-size: 2em;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    padding: 10px;
+}
+
+.typewriter-content {
+    display: inline-block;
+    /* Ensures that the text displays inline without gaps */
+    white-space: nowrap;
+    /* Prevents breaking of lines within the span */
+}
+
+.sec-img {
+    width: 50%;
+    position: relative;
+}
+
+.second,
+.third,
+.forth {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 400px;
+    /* Adjust this height as per your design */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.text-card {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.sec-img {
+    flex: 1;
+    text-align: center;
+}
+
+.sec-img img,
+.sec-img video {
+    max-width: 100%;
+    height: auto;
+}
+
+.card-container-tv {
+    width: 50%;
+
+}
+
+.first,
+.second,
+.third,
+.forth {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 400px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.text-card {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.sec-img {
+    flex: 1;
+    text-align: center;
+}
+
+.sec-img img,
+.sec-img video {
+    max-width: 100%;
+    height: auto;
+}
+
+.span-text {
+    width: 50%;
+}
+
+.text-card-tv-smart {
+    display: flex;
+    justify-content: space-between;
+}
+
+.first-card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-contianer-tv {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+.footer-class{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.footer-item{
+    padding: 1rem;
+}
+.footer-item-items{
+    padding: 5px;
+}
+
+
+/* Button Styles */
+.red-btn {
+    background-color: #e50914; /* Red background color */
+    color: white; /* Text color */
+    padding: 12px 24px; /* Padding for the button */
+    font-size: 1rem; /* Font size for the button */
+    border: none; /* No border */
+    border-radius: 8px; /* Rounded corners for a smoother look */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+.red-btn:hover {
+    background-color: #f40612; /* Darker red on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+.text-hero-end {
+    padding: 12px 24px; /* Padding for the text button */
+    font-size: 1rem; /* Font size for the text button */
+    border-radius: 8px; /* Rounded corners for a smoother look */
+    border: 1px solid #ccc; /* Border color */
+    margin-right: 10px; /* Space between text buttons */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+.text-hero-end:hover {
+    background-color: #f0f0f0; /* Light grey background on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+/* this is for responive */
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .hero {
+        width: 90%;
+    }
+   
+    .second,
+    .third,
+    .forth {
+        flex-direction: column;
+    }
+
+    .sec-img {
+        max-width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .text-card {
+        max-width: 80%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav {
+        max-width: 95%;
+        flex-direction: column;
+    }
+
+    .nav span img {
+        width: 100px;
+    }
+
+    .btn {
+        padding: 8px 16px;
+        margin-left: 10px;
+    }
+
+    .hero {
+        width: 95%;
+    }
+
+    .hero-buttons{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .red-btn{
+        margin-top:1rem;
+    }
+    .sec-img {
+        max-width: 100%;
+    }
+
+    .span-text-body{
+        font-size: 1rem;
+    }
+    .text-card {
+        max-width: 100%;
+    }
+
+    .faq {
+        max-width: 100%;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .footer-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-item a {
+        margin-bottom: 5px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .nav span img {
+        width: 80px;
+    }
+
+    .btn {
+        padding: 6px 12px;
+    }
+
+    .hero {
+        width: 100%;
+        padding: 10px;
+    }
+    .span-text-body{
+        font-size: 5px;
+    }
+    .text-card {
+        padding: 10px;
+    }
+
+    .faq h2 {
+        font-size: 1.5rem;
+    }
+
+    .faq-box-question-card li {
+        font-size: 1rem;
+    }
+}
